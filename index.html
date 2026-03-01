@@ -1,32 +1,208 @@
+Жансерік, [01.03.2026 14:36]
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kk">
 <head>
     <meta charset="UTF-8">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US National Parks Explorer</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d9e4f5, #f0f8ff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #5c6ac4, #2c3e50);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-menu li a:hover {
+            color: #f0c419;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(44, 62, 80, 0.1);
+        }
+
+        h2 {
+            color: #34495e;
+            border-bottom: 3px solid #5c6ac4;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .park-card {
+            background: #f8f9fb;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(92, 106, 196, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .park-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .park-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            padding: 20px 0;
+        }<style>
+body {
+    font-family: Arial, sans-serif;
+    background:#eef3fb;
+    margin:0;
+}
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+main{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 15px;
+}
+section{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+.park-card{
+    background:#f4f6fb;
+    padding:15px;
+    border-radius:10px;
+    margin-top:15px;
+}
+.park-image{
+    width:100%;
+    border-radius:10px;
+    margin:10px 0;
+}
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Website</h1>
+    <h1>US National Parks Explorer</h1>
+    <ul class="nav-menu">
+        <li><a href="#why-visit">Why Visit</a></li>
+        <li><a href="#top-parks">Top Parks</a></li>
+        <li><a href="#featured">Featured Parks</a></li>
+        <li><a href="#learn-more">Learn More</a></li>
+    </ul>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-
 <main>
-    <h2>Home Page</h2>
-    <p>This is the home page of my styled website.</p>
+    <section id="why-visit">
+        <h2>Why Visit National Parks?</h2>
+        <p>National parks protect natural landscapes, wildlife, and cultural heritage sites.</p>
+    </section>  <section>
+        <h2>Featured Parks</h2>
+
+<div class="park-card">
+<h3>Yellowstone National Park</h3>
+<img src="https://www.kuhl.com/borninthemountains/sites/default/files/2023-06/FI%20Y_0.jpg" class="park-image">
+<p>Famous for geysers and hot springs.</p>
+</div>
+
+<div class="park-card">
+<h3>Grand Canyon National Park</h3>
+<img src="https://www.grandcanyontrust.org/wp-content/uploads/2024/07/Grand-Canyon-National-Park-Sunset-Yavapai-Point-K-Thomas-National-Park-Service900x450.jpg" class="park-image">
+<p>Amazing sunsets and canyon views.</p>
+</div>
+
+<div class="park-card">
+<h3>Yosemite National Park</h3>
+<img src="https://cdn.tripster.com/media/product/gallery/original/Total_Yosemite_Experience_(37442).jpg?width=539&height=361&fit=crop" class="park-image">
+<p>Known for cliffs, waterfalls and sequoias.</p>
+</div>
+
+<div class="park-card">
+<h3>Everglades National Park</h3>
+<img src="https://airboatridesjupiterflorida.com/wp-content/uploads/2025/04/pexels-frida-oquendo-604068357-24245851.jpg" class="park-image">
+<p>Unique ecosystem with alligators.</p>
+</div>
+
+<div class="park-card">
+<h3>Zion National Park</h3>
+<img src="https://cdn.greaterzion.com/wp-content/uploads/2018/09/21213005/hiking-red-cliffs-recreation-area.jpg" class="park-image">
+<p>Famous for red cliffs and hiking.</p>
+</div>
+
+</section>
+
+
+    <section id="top-parks">
+        <h2>Top Parks to Visit</h2>
+        <ul>
+            <li>Yellowstone</li>
+            <li>Grand Canyon</li>
+            <li>Yosemite</li>
+            <li>Everglades</li>
+            <li>Zion</li>
+        </ul>
+    </section>
+
+    <section id="featured">
+        <h2>Featured Parks</h2>
+        <div id="park-container"></div>
+    </section>
+
+    <section id="learn-more">
+        <h2>Learn More</h2>
+        <a href="https://www.nps.gov" target="_blank">National Park Service</a>
+    </section> 
 </main>
 
 <footer>
-    <p>&copy; 2026 My Website</p>
+    <p>&copy; 2026 National Parks Project</p>
 </footer>
+
+
 
 </body>
 </html>
